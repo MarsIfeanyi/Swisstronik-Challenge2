@@ -9,16 +9,12 @@ contract SecurePassword {
         userPassword = _userPassword;
     }
 
-    error PasswordAlreadyExisit();
+    event PasswordUpdated(uint256 indexed _userPassword, address updater);
 
     function updatePassWord(uint256 _userPassword) external {
-        uint256 securedPassword = uint256(
-            keccak256(abi.encodePacked(_userPassword))
-        );
-
-        if (securedPassword == securedPassword) revert PasswordAlreadyExisit();
-
         userPassword = _userPassword;
+
+        emit PasswordUpdated(_userPassword, msg.sender);
     }
 
     function getPassword() external view returns (uint256) {
