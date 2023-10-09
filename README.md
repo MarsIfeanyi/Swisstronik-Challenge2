@@ -38,7 +38,7 @@ A smart contract that has:
 - ![image2](./images/02.png)
 
   - Interacting with Swisstronik contract and updatingPassword state, updatePassword()
-    ![image3](./images/03.png)
+    ![image3](./images/04.png)
 
 - Retrieving value from the private storage state in the swisstronik, getPassword()
-- ![image4](./images/04.png)
+- ![image4](./images/03.png)
