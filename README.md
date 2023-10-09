@@ -10,13 +10,13 @@ A smart contract that has:
 
   ### Deployment:
 
-  The smart contract was deployed to [Mumbai testnet](https://mumbai.polygonscan.com/address/0xaF692cd379c3B684c91bd9181A805fef3C1eE1C1#code) and [Swisstronik testnet](https://explorer-evm.testnet.swisstronik.com/address/0xCD6268DCb887d1d9aB0Bedcb104713679EC916C1) respectively
+  The smart contract was deployed to [Mumbai testnet](https://mumbai.polygonscan.com/address/0xaF692cd379c3B684c91bd9181A805fef3C1eE1C1) and [Swisstronik testnet](https://explorer-evm.testnet.swisstronik.com/address/0xCD6268DCb887d1d9aB0Bedcb104713679EC916C1) respectively
 
 ### Contract Address on Mumbai Testnet
 
 - 0xaF692cd379c3B684c91bd9181A805fef3C1eE1C1
 
-- https://mumbai.polygonscan.com/address/0xaF692cd379c3B684c91bd9181A805fef3C1eE1C1#code
+- https://mumbai.polygonscan.com/address/0xaF692cd379c3B684c91bd9181A805fef3C1eE1C1
 
 #### Contract Address on SwissTronik
 
