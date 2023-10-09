@@ -37,7 +37,7 @@ async function main() {
   const contract = contractFactory.attach(contractAddress);
 
   const functionName = "updatePassWord";
-  const passwordToSet = 20506707892545;
+  const passwordToSet = 2050670789646430;
 
   console.log("============Updating Password=============\n");
 
