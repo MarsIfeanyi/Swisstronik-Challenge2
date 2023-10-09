@@ -36,7 +36,7 @@ async function main() {
 
   console.log("========Changing the Storage:: UpdatingPassword ==========\n");
 
-  const newPassword = 13456074674546;
+  const newPassword = 1345607467456060;
 
   const updatePassword = await securePasswordContract.updatePassWord(
     newPassword
