@@ -8,10 +8,10 @@ async function main() {
   );
 
   console.log(
-    "==========Retrieving Value from Storage with Function=========="
+    "\n==========Retrieving Value from Storage with Function==========\n"
   );
   const getPassword = await securePasswordContract.getPassword();
-  console.log(`getPassword:: ${getPassword} `);
+  console.log(`getPassword:: ${getPassword} \n `);
 }
 
 main().catch((error) => {
