@@ -9,8 +9,8 @@ async function main() {
   ]);
 
   console.log("Deploying SecurePassword Contract to Mumbai Testnet");
-
-  await securePasswordContract.waitForDeployment();
+  // @ts-ignore
+  await securePasswordContract.waitForDeployment(10);
 
   console.log(`SecurePassword Deployed at ${securePasswordContract.target}`);
 
