@@ -1,30 +1,17 @@
-import { ethers, network } from "hardhat";
-const { verify } = require("../../utils/verify");
+import { ethers } from "hardhat";
 
 async function main() {
   const constructorParams = 64643074;
 
-  const securePasswordContract = await ethers.deployContract("SecurePassword", [
+  const swisstronikContract = await ethers.deployContract("SecurePassword", [
     constructorParams,
   ]);
 
   console.log("Deploying SecurePassword Contract to Swisstronik Testnet");
 
-  await securePasswordContract.waitForDeployment();
+  await swisstronikContract.waitForDeployment();
 
-  console.log(`SecurePassword Deployed at ${securePasswordContract.target}`);
-
-  if (
-    network.config.chainId === 80001 ||
-    (1291 && process.env.ETHERSCAN_API_KEY)
-  ) {
-    console.log("Waiting for block confirmations...");
-
-    //wait for 10 block confirmations before verifying the transaction
-    // @ts-ignore
-    await securePasswordContract.waitForDeployment(10);
-    await verify(securePasswordContract.target, [constructorParams]);
-  }
+  console.log(`SecurePassword Deployed at ${swisstronikContract.target}`);
 }
 
 main().catch((error) => {
